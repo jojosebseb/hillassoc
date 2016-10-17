@@ -320,7 +320,6 @@
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .section-2 .section-2-modules {
-    width: 25%;
     min-height: 301px;
     margin: 0px 5px;
     text-align: left;
@@ -330,6 +329,8 @@
     animation-name: section-2;
     -webkit-animation-duration: 2s;
     animation-duration: 2s; }
+  .section-2 a {
+    width: 25%; }
   .section-2 .section-2-text {
     padding: 10px 20px;
     border: 1px solid black;

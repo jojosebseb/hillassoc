@@ -375,7 +375,7 @@ $main-white: rgba(255, 255, 255, 0.87);
   -ms-flex-pack: justify;
   justify-content: space-between;
   .section-2-modules{
-    width: 25%;
+    // width: 25%;
     min-height: 301px;
     margin: 0px 5px;
     text-align: left;
@@ -386,6 +386,9 @@ $main-white: rgba(255, 255, 255, 0.87);
     -webkit-animation-duration: 2s;
             animation-duration: 2s;
 
+  }
+  a{
+    width: 25%;
   }
 
 
