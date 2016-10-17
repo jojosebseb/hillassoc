@@ -132,11 +132,15 @@
       color: #a88e50;
       font-size: 12px;
       text-align: right;
-      margin-right: 15px; }
+      margin-right: 15px;
+      position: relative; }
+    .navbar .navbar-right-top ul::after {
+      content: "|";
+      position: absolute;
+      right: 13%; }
     .navbar .navbar-right-top li {
-      display: inline-block; }
-    .navbar .navbar-right-top li::after {
-      content: "|"; }
+      display: inline-block;
+      margin-left: 20px; }
     .navbar .navbar-right-top .seperator {
       margin: 0px 10px; }
   .navbar .navbar-right-navigation li {
