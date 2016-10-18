@@ -87,6 +87,9 @@
   /* float: left; */
   text-align: center; }
 
+.mobile-hide {
+  display: none; }
+
 .navbar {
   position: fixed;
   width: 100vw;
@@ -143,6 +146,41 @@
       text-align: center;
       padding: 20px 0px; }
     .navbar .navbar-right-navigation li:hover {
+      color: #0c3262;
+      border-bottom: 3px solid #0c3262; }
+  .navbar .dashboard-nav {
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    background: rgba(20, 50, 80, 0.7);
+    z-index: 1;
+    width: 100vw;
+    left: 0;
+    opacity: 0; }
+    .navbar .dashboard-nav ul {
+      background: white;
+      width: 100%;
+      transition: all .5s ease; }
+    .navbar .dashboard-nav li {
+      font-size: 14px;
+      display: block;
+      /* margin: 30px 0px; */
+      font-family: LoewMed;
+      color: #0c3262;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      transition: all .1s ease-in;
+      text-align: left;
+      padding: 15px 20px; }
+    .navbar .dashboard-nav li.gold {
+      color: #a88e50;
+      font-family: catamaran; }
+    .navbar .dashboard-nav li.user-panel {
+      background: #eee;
+      color: #555; }
+    .navbar .dashboard-nav .username {
+      font-family: LoewMed; }
+    .navbar .dashboard-nav li:hover {
       color: #0c3262;
       border-bottom: 3px solid #0c3262; }
   .navbar .nav-active {
