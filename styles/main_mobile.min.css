@@ -756,9 +756,10 @@ input.navy-btn {
   padding: 19px 0px 0px; }
 
 .news-container {
-  padding: 10px 25px;
+  padding: 10px 25px 20px;
   cursor: pointer;
-  margin: 5px 0px; }
+  margin: 5px 0px;
+  border-bottom: 1px solid #ccc; }
   .news-container .news-category {
     color: #a88e50;
     font-size: 13px;
@@ -797,8 +798,6 @@ input.navy-btn {
   text-align: right; }
 
 .prev-buttons, .next-buttons {
-  background-color: #f0f0f0;
-  width: 100px;
   margin: 0px 5px;
   color: #7c7c7c;
   height: 40px;
@@ -808,18 +807,17 @@ input.navy-btn {
   border-radius: 7px;
   cursor: pointer;
   font-size: 14px;
-  font-family: LoewReg !important;
-  display: none; }
+  font-family: LoewReg !important; }
 
 .prev-buttons {
   float: left;
   vertical-align: top;
-  margin: -6px 0px 0px 20px !important; }
+  margin: -6px 0px 0px 15px !important; }
 
 .next-buttons {
   float: right;
   vertical-align: top;
-  margin: -6px 20px 0px 0px !important; }
+  margin: -6px 15px 0px 0px !important; }
 
 .prev-buttons:hover, .next-buttons:hover {
   color: #111; }
@@ -838,7 +836,7 @@ input.navy-btn {
   transition: all .4s ease;
   position: relative;
   margin: 0;
-  padding: 20px 0px 30px; }
+  padding: 10px 0px 30px; }
 
 .news-detail-content {
   width: 100vw;

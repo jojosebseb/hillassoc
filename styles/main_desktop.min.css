@@ -517,7 +517,6 @@
   margin: 20px 0px; }
 
 .w50 {
-  width: 49%;
   display: inline-block;
   vertical-align: top;
   padding-right: 50px; }
@@ -548,9 +547,14 @@
 
 .what-we-do-section {
   display: none; }
-  .what-we-do-section .thirty {
-    width: 33%;
-    padding-right: 30px; }
+  .what-we-do-section .flex-parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between; }
+  .what-we-do-section .inner-segment {
+    width: 100%;
+    padding-right: 20px; }
 
 .active {
   display: block; }
