@@ -463,6 +463,15 @@
   .small-module .contact-caption {
     font-size: 15px; }
 
+.small-module:hover {
+  background: #0c3262; }
+  .small-module:hover .blue-loewexb {
+    color: white; }
+  .small-module:hover .caption {
+    color: white; }
+  .small-module:hover .gold-upperline {
+    color: white; }
+
 .what-tab-container {
   position: relative; }
   .what-tab-container .tab-handle-container ul {
@@ -558,6 +567,35 @@
 
 .active {
   display: block; }
+
+table strong {
+  color: #0c3262; }
+
+table tr {
+  display: flex;
+  justify-content: space-between; }
+
+table td {
+  vertical-align: top;
+  padding-right: 30px;
+  width: 100%; }
+
+table ul li {
+  color: #333;
+  margin: 5px 0px;
+  font-size: 15px;
+  position: relative;
+  padding-left: 20px;
+  line-height: normal; }
+
+table ul li:before {
+  content: "•";
+  color: #a88e50;
+  font-size: 20px;
+  position: absolute;
+  top: -4px;
+  left: 5px;
+  font-family: LoewReg; }
 
 /*whatwedo*/
 /*whoweare*/
@@ -821,7 +859,9 @@
     height: 45px;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px; }
+    margin-right: 15px;
+    margin-left: 10px;
+    padding: 2px 0px 2px 0px; }
   .vertical-tab-container .vertical-tab-content-container {
     z-index: -19;
     opacity: 0;

@@ -17,7 +17,12 @@
 <body>
   <div class="navbar">
     <div class="container">
-      <div class="navbar-logo-container">
+      <div class="archive-handle">
+        <div class="mobile-lines"></div>
+        <div class="mobile-lines"></div>
+        <div class="mobile-lines"></div>
+      </div>
+      <div class="navbar-logo-container mobile-center">
         <a href="#"><img src="img/global/logo.png" alt="" class="navbar-logo"></a>
       </div>
       <div class="navbar-right hide">
@@ -31,13 +36,8 @@
         <div class="navbar-right-navigation dashboard-nav">
           <ul>
             <li class="gold">Welcome, <span class="username">John Doe!</span></li>
-            <a href="#"><li>Calendar</li></a>
-            <a href="#"><li>Security Adivsories</li></a>
-            <a href="#"><li>Weekly Risk Review</li></a>
-            <a href="#"><li>Monthly Provincial</li></a>
-            <a href="#"><li>Travel Alert Advisory</li></a>
-            <a href="#"><li>Archive</li></a>
             <a href="#"><li class="user-panel">My Account</li></a>
+            <a href="#"><li class="user-panel">Change Password</li></a>
             <a href="#"><li class="user-panel">Sign Out</li></a>
           </ul>
         </div>
@@ -48,9 +48,10 @@
         </div>
       </div>
       <div class="mobile-handle">
-        <div class="mobile-lines"></div>
-        <div class="mobile-lines"></div>
-        <div class="mobile-lines"></div>
+        <div class="user-icon-container">
+          <div class="user-head"></div>
+          <div class="user-body"></div>
+        </div>
       </div>
 
     </div><!-- container -->
@@ -149,50 +150,70 @@
           </div>
         </div>
       </div>
-      <div class="w25 mobile-hide">
+      <div class="w25 archive-container">
+        <div class="archive-close">
+          x
+        </div>
         <div class="search-container">
           <input type="text" placeholder="Search Here" class="search-input">
         </div>
-
-
         <div class="vertical-tab-container">
           <div class="vertical-tab-title">
             Calendar
           </div>
           <div class="vertical-tab-content-container">
-            <div class="vertical-tab-content">
-              <img src="img/global/pdf-icon.png" alt="" class="pdf-icon">
-              <div class="inline">
-                <div class="content-title">
-                  SAB Mon3 Oct 2016
+            <a href="#" class="archive-a">
+              <div class="vertical-tab-content">
+                <img src="img/global/pdf-icon.png" alt="" class="pdf-icon">
+                <div class="inline">
+                  <div class="content-title">
+                    SAB Mon3 Oct 2016
+                  </div>
+                  <div class="content-time">
+                    <span class="day">Monday</span>, <span class="date">3 October 2016</span>
+                  </div>
                 </div>
-                <div class="content-time">
-                  <span class="day">Monday</span>, <span class="date">3 October 2016</span>
-                </div>
-              </div>
-            </div>
-            <div class="vertical-tab-content">
-              <img src="img/global/pdf-icon.png" alt="" class="pdf-icon">
-              <div class="inline">
-                <div class="content-title">
-                  SAB Mon3 Oct 2016
-                </div>
-                <div class="content-time">
-                  <span class="day">Monday</span>, <span class="date">3 October 2016</span>
+                <div class="archive-download">
+
+
                 </div>
               </div>
-            </div>
-            <div class="vertical-tab-content">
-              <img src="img/global/pdf-icon.png" alt="" class="pdf-icon">
-              <div class="inline">
-                <div class="content-title">
-                  SAB Mon3 Oct 2016
+            </a>
+            <a href="stores.jp" class="archive-a">
+              <div class="vertical-tab-content">
+                <img src="img/global/pdf-icon.png" alt="" class="pdf-icon">
+                <div class="inline">
+                  <div class="content-title">
+                    SAB Mon3 Oct 2016
+                  </div>
+                  <div class="content-time">
+                    <span class="day">Monday</span>, <span class="date">3 October 2016</span>
+                  </div>
                 </div>
-                <div class="content-time">
-                  <span class="day">Monday</span>, <span class="date">3 October 2016</span>
+                <div class="archive-download">
+
+
                 </div>
               </div>
-            </div>
+            </a>
+            <a href="#" class="archive-a">
+              <div class="vertical-tab-content">
+                <img src="img/global/pdf-icon.png" alt="" class="pdf-icon">
+                <div class="inline">
+                  <div class="content-title">
+                    SAB Mon3 Oct 2016
+                  </div>
+                  <div class="content-time">
+                    <span class="day">Monday</span>, <span class="date">3 October 2016</span>
+                  </div>
+                </div>
+                <div class="archive-download">
+
+
+                </div>
+              </div>
+            </a>
+
           </div>
         </div>
 
@@ -500,7 +521,7 @@
 
 </body>
   <script type="text/javascript" src="script/jquery.1.12.0.min.js"></script>
-  <!-- <script type="text/javascript" src="script/jquery.mobile-1.4.5.js"></script> -->
+  <script type="text/javascript" src="script/jquery.mobile-1.4.5.js"></script>
   <script type="text/javascript" src="script/jquery.mousewheel.js"></script>
   <script type="text/javascript" src="script/jquery.jscrollpane.min.js"></script>
   <script type="text/javascript" src="script/jquery.js"></script>

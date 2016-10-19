@@ -113,10 +113,15 @@ $main-white: rgba(255, 255, 255, 0.87);
   .navbar-logo-container{
     float: left;
     position: relative;
-    top: 10px;
+    top: 15px;
     .navbar-logo{
       height: 30px;
     }
+  }
+  .mobile-center{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
   }
   .navbar-right{
     float: right;
@@ -217,7 +222,7 @@ $main-white: rgba(255, 255, 255, 0.87);
   }
 }
 
-.mobile-handle{
+.mobile-handle, .archive-handle{
   margin: 5px 0px;
   width: 50px;
   padding: 5px;
@@ -229,16 +234,83 @@ $main-white: rgba(255, 255, 255, 0.87);
     transition: all .3s cubic-bezier(0.81, -0.26, 0.25, 1.26);
   }
 }
+.user-icon-container{
+  height: 27px;
+  width: 25px;
+  position: relative;
+  overflow: hidden;
+  top: 3px;
+  border-bottom: 2px solid grey;
+  margin: auto;
+  transition: all .3s ease;
+  .user-head{
+    width: 15px;
+    border: 2px solid grey;
+    height: 14px;
+    border-radius: 50%;
+    margin: 0 auto -1px;
+    transition: all .3s ease;
+  }
+  .user-body{
+    width: 25px;
+    height: 24px;
+    border: 2px solid grey;
+    border-radius: 45%;
+    margin: auto;
+    transition: all .3s ease;
+  }
+}
+.archive-handle{
+  margin: 5px 0px;
+width: 40px;
+padding: 5px;
+float: left;
+// margin-right: 45px;
+transition: all 0.5s cubic-bezier(0.81, -0.26, 0.25, 1.26);
+  .mobile-lines{
+    border: 1px solid #0c3262;
+    margin: 6px 0px;
+    transition: all 0.3s cubic-bezier(0.81, -0.26, 0.25, 1.26);
+  }
+}
+.archive-close{
+  font-size: 34px;
+    color: white;
+    transform: scaleY(0.8);
+    /* text-align: right; */
+    border-radius: 50%;
+    border: 2px solid white;
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+    padding: 6px 10px;
+    line-height: 34px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 20px;
+}
 .mobile-handle.active{
-  transform: rotateZ(180deg);
+  // transform: rotateZ(180deg);
   .mobile-lines{
     // border: 1px solid $main-blue;
     // margin: 2px 0;
     // height: 5px;
     // transform: rotateZ(180deg);
   }
-
+  .user-icon-container{
+    border-bottom: 2px solid $main-blue;
+    // transform: translat
+    .user-head{
+      border: 2px solid $main-blue;
+      background-color: $main-blue;
+    }
+    .user-body{
+      border: 2px solid $main-blue;
+      background-color: $main-blue;
+    }
+  }
 }
+
 .username-container{
   display: none;
 }
@@ -695,13 +767,48 @@ $main-white: rgba(255, 255, 255, 0.87);
   }
 }
 .what-we-do-section{
-
+    display: none;
   .thirty{
     padding-right: 30px;
   }
 }
 .active{
   display: block;
+}
+
+table{
+  strong{
+    color: $main-blue;
+  }
+  tr{
+    // display: flex;
+    // justify-content: space-between;
+  }
+  td{
+    vertical-align: top;
+    // padding-right: 30px;
+    width: 100%;
+    display: block;
+  }
+  ul{
+    li{
+      color: #333;
+      margin: 5px 0px;
+      font-size: 15px;
+      position: relative;
+      padding-left: 20px;
+      line-height: normal;
+    }
+    li:before {
+      content: "•";
+      color: #a88e50;
+      font-size: 20px;
+      position: absolute;
+      top: -4px;
+      left: 5px;
+      font-family: LoewReg;
+    }
+  }
 }
 //whoweare
 
@@ -739,14 +846,37 @@ input.navy-btn{
 .w25{
   vertical-align: top;
   min-height: 35vw;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  background: rgba(12, 50, 98, 0.7);
+  height: 100%;
+  z-index: 10;
+  width: 100%;
+  overflow-y: scroll;
+  // padding-top: 55px;
+  left: -100%;
+  transition: all .3s ease;
+  text-align: right;
+}
+.w25::before{
+  content: "";
+  position: absolute;
+  /* top: -100.8%; */
+  background: #0c3262;
+  opacity: 1;
+  height: 50%;
+  width: 100%;
+  z-index: 0;
+  left: 0;
+  bottom: 0;
 }
 .search-input{
   border: none;
-  padding-bottom: 15px;
+  padding: 10px;
   border-bottom: 1px solid #ccc;
   position: relative;
   font-size: 15px;
-  padding-left: 10px;
   display: block;
   width: 100%;
   outline: none;
@@ -839,21 +969,22 @@ input.navy-btn{
 .vertical-tab-container{
   z-index: 1;
   position: relative;
+  background: $main-blue;
   .vertical-tab-title{
-    color: $main-gold;
-    font-family: loewMed;
+    color: #ccc;
+    font-family: loewReg;
     padding: 15px 0px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(230,230,230, 0.3);
     position: relative;
     padding-right: 30px;
     cursor: pointer;
     font-size: 14px;
-
+    text-align: left;
     padding-left: 10px;
   }
   .vertical-tab-title::after{
     content: "";
-    color: #888;
+    color: #eee;
     font-size: 18px;
     position: absolute;
     right: 0;
@@ -867,14 +998,16 @@ input.navy-btn{
     transition: all .4s ease;
     height: 5px;
     width: 5px;
-    border-right: 2px solid #888;
-    border-bottom: 2px solid #888;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
   }
   .pdf-icon{
     height: 45px;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding: 5px 0px 5px 5px;
   }
   .vertical-tab-content-container{
     z-index: -19;
@@ -885,10 +1018,25 @@ input.navy-btn{
     overflow: hidden;
   }
   .vertical-tab-content{
-    margin: 10px 0px;
+    padding: 10px 0px;
     padding-left: 10px;
     font-size: 12px;
     cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    padding-right: 20px;
+    position: relative;
+  }
+  .archive-download{
+    height: 25px;
+    width: 25px;
+    border: 2px solid #55bcaa;
+    border-radius: 50%;
+    position: absolute;
+    right: 20p;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .inline{
     display: inline-block;
@@ -900,6 +1048,9 @@ input.navy-btn{
     text-decoration: underline;
   }
 }
+.archive-a:visited .archive-download{
+  border: 2px solid grey;
+}
 .vertical-tab-container.active{
   z-index: 5;
   .vertical-tab-title::after{
@@ -909,7 +1060,8 @@ input.navy-btn{
   .vertical-tab-content-container{
     z-index: 1;
     opacity: 1;
-    margin: 25px 0px;
+    // padding: 10px 0px;
+    background: white;
     max-height: 1000px;
     overflow: visible;
   }
@@ -931,7 +1083,8 @@ input.navy-btn{
   }
 }
 .search-container {
-    padding: 19px 0px 0px;
+    // padding: 19px 0px 0px;
+    border-top: 5px solid $main-gold;
 }
 .news-container{
   padding: 10px 25px 20px;
