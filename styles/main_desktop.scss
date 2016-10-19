@@ -823,6 +823,14 @@ table{
   cursor: pointer;
   font-size: 13px;
 }
+.flex-parent{
+  display: flex;
+  justify-content: space-between;
+}
+.inner-segment{
+  width: 100%;
+  padding-right: 30px;
+}
 /*contact*/
 
 /*ris-dashboard*/
