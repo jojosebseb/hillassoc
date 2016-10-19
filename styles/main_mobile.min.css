@@ -655,7 +655,8 @@ table strong {
 table td {
   vertical-align: top;
   width: 100%;
-  display: block; }
+  display: block; 
+  padding-bottom: 30px; }
 
 table ul li {
   color: #333;
