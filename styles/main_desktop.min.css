@@ -188,8 +188,9 @@
     margin: 20px 0px; }
     .login-overlay .form-group .sub-caption {
       color: #545454;
-      font-size: 13px;
-      margin-left: 20px; }
+      font-size: 12px;
+      margin: 5px 0px;
+      text-align: center; }
     .login-overlay .form-group .blue-btn {
       width: 100px;
       text-align: center; }
@@ -568,34 +569,32 @@
 .active {
   display: block; }
 
-table strong {
-  color: #0c3262; }
-
-table tr {
-  display: flex;
-  justify-content: space-between; }
-
-table td {
-  vertical-align: top;
-  padding-right: 30px;
+table {
   width: 100%; }
-
-table ul li {
-  color: #333;
-  margin: 5px 0px;
-  font-size: 15px;
-  position: relative;
-  padding-left: 20px;
-  line-height: normal; }
-
-table ul li:before {
-  content: "•";
-  color: #a88e50;
-  font-size: 20px;
-  position: absolute;
-  top: -4px;
-  left: 5px;
-  font-family: LoewReg; }
+  table strong {
+    color: #0c3262; }
+  table tr {
+    display: flex;
+    justify-content: space-between; }
+  table td {
+    vertical-align: top;
+    padding-right: 30px;
+    width: 100%; }
+  table ul li {
+    color: #333;
+    margin: 5px 0px;
+    font-size: 15px;
+    position: relative;
+    padding-left: 20px;
+    line-height: normal; }
+  table ul li:before {
+    content: "•";
+    color: #a88e50;
+    font-size: 20px;
+    position: absolute;
+    top: -4px;
+    left: 5px;
+    font-family: LoewReg; }
 
 /*whatwedo*/
 /*whoweare*/

@@ -217,8 +217,9 @@ $main-white: rgba(255, 255, 255, 0.87);
     margin: 20px 0px;
     .sub-caption{
       color: #545454;
-      font-size: 13px;
-      margin-left: 20px;
+      font-size: 12px;
+      margin: 5px 0px;
+      text-align: center;
     }
     .blue-btn{
       width: 100px;
@@ -668,6 +669,7 @@ $main-white: rgba(255, 255, 255, 0.87);
   display: block;
 }
 table{
+  width: 100%;
   strong{
     color: $main-blue;
   }
