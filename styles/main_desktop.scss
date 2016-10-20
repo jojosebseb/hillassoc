@@ -186,6 +186,12 @@ $main-white: rgba(255, 255, 255, 0.87);
     }
   }
 }
+.section.thankyou-message {
+    border: 1px solid $main-blue;
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+}
 /*navbar*/
 
 /* login*/
@@ -224,6 +230,9 @@ $main-white: rgba(255, 255, 255, 0.87);
     .blue-btn{
       width: 100px;
       text-align: center;
+      border: solid;
+      display: block;
+      margin: auto;
     }
   }
   .subtitle{
