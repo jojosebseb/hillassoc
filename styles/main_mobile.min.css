@@ -91,6 +91,11 @@
 .mobile-hide {
   display: none; }
 
+#login-close {
+  top: 10px;
+  right: 10px;
+  position: absolute; }
+
 /*init vars*/
 /*navbar*/
 .navbar {
@@ -118,16 +123,24 @@
     float: right; }
   .navbar .navbar-right-top {
     margin-bottom: 20px;
+    position: fixed;
+    top: 246px;
+    left: 0;
+    background: white;
+    z-index: 5;
+    width: 100%;
+    text-align: center;
+    height: 55px;
+    padding: 15px 0;
     display: none; }
     .navbar .navbar-right-top ul {
-      color: #a88e50;
-      font-size: 12px;
-      text-align: right;
-      margin-right: 15px; }
+      color: #a88e50; }
     .navbar .navbar-right-top li {
       display: inline-block; }
     .navbar .navbar-right-top .seperator {
       margin: 0px 10px; }
+  .navbar .navbar-right-top.active {
+    display: block; }
   .navbar .navbar-right-navigation {
     height: 100vh;
     position: fixed;
@@ -304,30 +317,38 @@
   .login-overlay .login-container {
     background: white;
     border: 1px solid #0c3262;
-    padding: 35px 60px;
+    padding: 5px 10px;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 450px;
-    height: 230px; }
+    width: 300px;
+    height: 300px; }
   .login-overlay .form-group {
     margin: 20px 0px; }
     .login-overlay .form-group .sub-caption {
       color: #545454;
       font-size: 13px;
-      margin-left: 20px; }
+      margin-top: 20px;
+      text-align: center; }
     .login-overlay .form-group .blue-btn {
       width: 100px;
-      text-align: center; }
+      text-align: center;
+      margin: auto;
+      display: block; }
   .login-overlay .subtitle {
     width: 80px;
     display: inline-block;
     text-align: right; }
   .login-overlay .login-input {
-    margin-left: 20px;
-    width: 220px; }
+    margin-left: 10px;
+    width: 255px; }
+  .login-overlay .login-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: scaleY(0.7); }
 
 .right {
   text-align: right; }

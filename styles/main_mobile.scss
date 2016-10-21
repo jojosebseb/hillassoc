@@ -96,6 +96,11 @@ $main-white: rgba(255, 255, 255, 0.87);
 .mobile-hide{
   display: none;
 }
+#login-close{
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
 /*init vars*/
 
 /*navbar*/
@@ -129,12 +134,18 @@ $main-white: rgba(255, 255, 255, 0.87);
   }
   .navbar-right-top{
     margin-bottom: 20px;
+    position: fixed;
+    top: 246px;
+    left: 0;
+    background: white;
+    z-index: 5;
+    width: 100%;
+    text-align: center;
+    height: 55px;
+    padding: 15px 0;
     display: none;
     ul{
       color: $main-gold;
-      font-size: 12px;
-      text-align: right;
-      margin-right: 15px;
     }
     li{
       display: inline-block;
@@ -142,6 +153,9 @@ $main-white: rgba(255, 255, 255, 0.87);
     .seperator{
       margin: 0px 10px;
     }
+  }
+  .navbar-right-top.active{
+    display: block;
   }
   .navbar-right-navigation{
     height: 100vh;
@@ -342,26 +356,29 @@ transition: all 0.5s cubic-bezier(0.81, -0.26, 0.25, 1.26);
   display: none;
   .login-container{
     background: white;
-    border: 1px solid $main-blue;
-    padding: 35px 60px;
+    border: 1px solid #0c3262;
+    padding: 5px 10px;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 450px;
-    height: 230px;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
   }
   .form-group{
     margin: 20px 0px;
     .sub-caption{
       color: #545454;
       font-size: 13px;
-      margin-left: 20px;
+      margin-top: 20px;
+      text-align: center;
     }
     .blue-btn{
       width: 100px;
       text-align: center;
+      margin: auto;
+      display: block;
     }
   }
   .subtitle{
@@ -370,8 +387,14 @@ transition: all 0.5s cubic-bezier(0.81, -0.26, 0.25, 1.26);
     text-align: right;
   }
   .login-input{
-    margin-left: 20px;
-    width: 220px;
+    margin-left: 10px;
+    width: 255px;
+  }
+  .login-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: scaleY(0.7);
   }
 }
 .right{

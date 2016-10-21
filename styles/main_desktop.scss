@@ -151,11 +151,6 @@ $main-white: rgba(255, 255, 255, 0.87);
       margin-right: 15px;
       position: relative;
     }
-    ul::after{
-      content: "|";
-      position: absolute;
-      right: 13%;
-    }
     li{
       display: inline-block;
       margin-left: 20px;

@@ -134,10 +134,6 @@
       text-align: right;
       margin-right: 15px;
       position: relative; }
-    .navbar .navbar-right-top ul::after {
-      content: "|";
-      position: absolute;
-      right: 13%; }
     .navbar .navbar-right-top li {
       display: inline-block;
       margin-left: 20px; }

@@ -80,12 +80,15 @@ loginClose.on('click', function(){
  var mobileNav = $('.navbar-right-navigation');
  var archiveNav = $('.archive-container');
  var navActive = $('.nav-active');
+ var navTop = $('.navbar-right-top');
 mobileHandle.on('click', function(){
  mobileNav.toggleClass('nav-active');
+ navTop.toggleClass('active');
  mobileHandle.toggleClass('active')
 });
 mobileNav.on('click', function(){
  mobileNav.toggleClass('nav-active');
+ navTop.toggleClass('active');
 });
 archiveHandle.on('click', function(){
   archiveNav.css({
