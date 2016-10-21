@@ -206,14 +206,15 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 450px;
-    height: 250px; }
+    height: 300px; }
   .login-overlay .form-group {
     margin: 20px 0px; }
     .login-overlay .form-group .sub-caption {
       color: #545454;
       font-size: 12px;
       margin: 5px 0px;
-      text-align: center; }
+      text-align: center;
+      margin-top: 35px; }
     .login-overlay .form-group .blue-btn {
       width: 100px;
       text-align: center;
