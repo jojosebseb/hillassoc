@@ -56,6 +56,27 @@
   border-bottom: 5px solid #a88e50;
   padding-bottom: 50px; }
 
+.styled-ul ul {
+  list-style: disc;
+  margin: 10px 0px 20px; }
+
+.styled-ul li {
+  color: #333;
+  margin: 5px 0px;
+  font-size: 15px;
+  position: relative;
+  padding-left: 20px;
+  line-height: normal; }
+
+.styled-ul li:before {
+  content: "•";
+  color: #a88e50;
+  font-size: 20px;
+  position: absolute;
+  top: -4px;
+  left: 5px;
+  font-family: LoewReg; }
+
 .outline-button {
   border: 1px solid white;
   padding: 5px 10px;
