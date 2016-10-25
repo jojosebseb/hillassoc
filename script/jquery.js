@@ -33,11 +33,11 @@ win.on('scroll', function(){
       top: 0,
     })
   }
-  var topscroll = win.scrollTop()/6;
-  var opc = topscroll / 100;
-  footer.css({
-    opacity : opc,
-  })
+  // var topscroll = win.scrollTop()/1;
+  // var opc = topscroll / 100;
+  // footer.css({
+  //   opacity : opc,
+  // })
 });
 
 //what-we-do-tab

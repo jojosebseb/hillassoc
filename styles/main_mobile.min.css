@@ -771,7 +771,8 @@ input.navy-btn {
 /*ris*/
 .blue-block {
   height: 50px;
-  background-color: #0c3262; }
+  background-color: #0c3262;
+  padding: 5px 0px; }
 
 .w25 {
   vertical-align: top;
@@ -1147,6 +1148,33 @@ input.navy-btn {
     position: relative;
     top: -5px;
     font-size: 13px; }
+
+.form-group {
+  margin: 20px auto;
+  position: relative;
+  padding: 0px 30px; }
+
+.my-account-input {
+  width: 100%;
+  height: 45px;
+  padding-left: 10px;
+  border: 1px solid #afafaf; }
+
+.my-account-button {
+  text-align: center;
+  background: #a88e50;
+  padding: 10px 0;
+  color: white;
+  margin: 0 30px; }
+
+.edit-button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #0c3262;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%); }
 
 /* .news-detail-content::after{*/
 /*   position: absolute;*/

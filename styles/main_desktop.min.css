@@ -105,7 +105,10 @@
   padding-left: 5px; }
 
 .username-container {
-  color: #a88e50; }
+  color: #a88e50;
+  position: relative;
+  top: 25px;
+  right: 10px; }
   .username-container span {
     font-family: LoewMed; }
 
@@ -241,7 +244,7 @@
   z-index: -1px;
   z-index: -5;
   bottom: 0;
-  opacity: 0; }
+  opacity: 1; }
   .footer .footer-top {
     min-height: 180px;
     background-color: #295080;
@@ -777,6 +780,33 @@ table {
   margin-bottom: 15px;
   outline: none; }
 
+.search-container::after {
+  content: "";
+  border: 2px solid #0c3262;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  border-radius: 50%; }
+
+.search-container::before {
+  content: "";
+  border-bottom: 2px solid #0c3262;
+  width: 6px;
+  height: 12px;
+  position: absolute;
+  right: 8px;
+  top: 55%;
+  transform: translateY(-50%) rotateZ(40deg);
+  display: block;
+  z-index: 5; }
+
+.archive-close {
+  display: none; }
+
 .w75 {
   width: 75%;
   display: inline-block;
@@ -862,6 +892,25 @@ table {
 .filter-group {
   margin-bottom: 30px; }
 
+.filter-inline-group {
+  text-align: left;
+  padding-left: 10px; }
+  .filter-inline-group .filter-handle {
+    width: 130px;
+    display: inline-block;
+    margin-right: 10px; }
+  .filter-inline-group .blue-btn {
+    background-color: #0c3262;
+    color: white;
+    display: inline-block;
+    padding: 3px 25px;
+    font-size: 14px;
+    height: 35px;
+    vertical-align: top;
+    margin: 10px 0px;
+    cursor: pointer;
+    padding: 8px 20px; }
+
 .vertical-tab-container {
   z-index: 1;
   position: relative; }
@@ -941,7 +990,8 @@ table {
     font-size: 16px; }
 
 .search-container {
-  padding: 19px 0px 0px; }
+  padding: 19px 0px 0px;
+  position: relative; }
 
 .news-container {
   padding: 15px 25px;
@@ -1094,6 +1144,38 @@ table {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
   position: relative; }
+
+.search-result-header {
+  padding: 10px 25px;
+  font-family: arial; }
+
+.form-group {
+  margin: 30px;
+  position: relative;
+  width: 400px; }
+
+.my-account-input {
+  width: 100%;
+  height: 45px;
+  padding-left: 10px;
+  border: 1px solid #afafaf; }
+
+.my-account-button {
+  text-align: center;
+  background: #a88e50;
+  padding: 10px 0;
+  color: white;
+  width: 400px;
+  margin: 30px; }
+
+.edit-button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #0c3262;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%); }
 
 @-webkit-keyframes build-up-parent {
   0% {
