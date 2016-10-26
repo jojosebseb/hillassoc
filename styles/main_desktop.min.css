@@ -957,7 +957,8 @@
     display: inline-block;
     vertical-align: middle;
     -webkit-transition: all .3s ease;
-    transition: all .3s ease; }
+    transition: all .3s ease;
+    max-width: 230px; }
   .vertical-tab-container .inline:hover {
     text-decoration: underline; }
 

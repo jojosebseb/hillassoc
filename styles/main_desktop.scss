@@ -1087,6 +1087,7 @@ $main-white: rgba(255, 255, 255, 0.87);
     vertical-align: middle;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
+    max-width: 230px;
   }
   .inline:hover{
     text-decoration: underline;

@@ -106,6 +106,7 @@ archiveClose.on('click', function(){
 //ris
 var filterOptions = $('.scroll-controller');
 var filterHandle = $('.filter-handle');
+var verticalTabTitle = $('.vertical-tab-title');
 var verticalTabHandle = $('.vertical-tab-container');
 var customScroll = $('.custom-scroll');
 var newsContainer = $('.news-container');
@@ -211,9 +212,15 @@ filterHandle.on('click', function(){
     $(this).addClass('active');
   }
 })
-verticalTabHandle.on('click', function(){
-  verticalTabHandle.removeClass('active');
-  $(this).toggleClass('active');
+verticalTabTitle.on('click', function(){
+  if($(this).parent().hasClass("active")){
+    $(this).parent().removeClass("active");
+  }
+  else {
+    verticalTabHandle.removeClass('active');
+    $(this).parent().toggleClass('active');
+  }
+
 })
 //ris
 
