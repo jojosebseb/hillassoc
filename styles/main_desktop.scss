@@ -877,7 +877,7 @@ table{
   /* margin-right: -5px; */
   min-height: 35vw;
   /* border-right: 1px solid #ccc; */
-  border-left: 1px solid #ccc;
+  // border-left: 1px solid #ccc;
   float: left;
 }
 .search-input{
@@ -925,7 +925,7 @@ table{
   vertical-align: top;
   border-left: 1px solid #ccc;
   min-height: 35vw;
-  border-right: 1px solid #ccc;
+  // border-right: 1px solid #ccc;
   position: relative;
   overflow: hidden;
   /* float: right; */
@@ -1163,8 +1163,13 @@ table{
 .clickablelink:hover{
   // background: #eee;
 }
-.news-container:hover .news-header{
+.news-container:hover .clickablelink{
     text-decoration: underline;
+}
+.border-container{
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 .page-buttons{
   text-align: right;
