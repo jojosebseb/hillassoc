@@ -1161,10 +1161,11 @@ table{
   }
 }
 .clickablelink:hover{
-  // background: #eee;
+  background: #eee;
+  text-decoration: underline;
 }
-.news-container:hover .clickablelink{
-    text-decoration: underline;
+.clickablelink{
+
 }
 .border-container{
   border-left: 1px solid #ccc;

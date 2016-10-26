@@ -1022,7 +1022,8 @@ table {
     background-color: #a88e50;
     color: white; }
 
-.news-container:hover .clickablelink {
+.clickablelink:hover {
+  background: #eee;
   text-decoration: underline; }
 
 .border-container {
