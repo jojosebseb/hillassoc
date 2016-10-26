@@ -368,6 +368,7 @@ transition: all 0.5s cubic-bezier(0.81, -0.26, 0.25, 1.26);
   }
   .form-group{
     margin: 20px 0px;
+    padding: 0;
     .sub-caption{
       color: #545454;
       font-size: 13px;
@@ -1171,12 +1172,11 @@ input.navy-btn{
     color: white;
   }
 }
-.news-container:hover{
+.news-header:hover{
   background: #eee;
+  text-decoration: underline;
 }
-.news-container:hover .news-header{
-    text-decoration: underline;
-}
+
 .page-buttons{
   text-align: right;
 }

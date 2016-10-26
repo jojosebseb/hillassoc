@@ -1138,6 +1138,8 @@ table{
     font-size: 16px;
     font-family: LoewMed;
     cursor: pointer;
+    display: block;
+    padding: 7px 0;
   }
   .news-caption{
     color: #545454;
@@ -1233,10 +1235,10 @@ table{
           transform: scale(1);
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
-  .custom-scroll{
-    height: 60vh;
-    overflow-y: scroll;
-  }
+  // .custom-scroll{
+  //   height: 60vh;
+  //   overflow-y: scroll;
+  // }
   .news-detail-category{
     border-bottom: 1px solid #ccc;
     color: $main-gold;
