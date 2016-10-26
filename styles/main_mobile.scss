@@ -819,39 +819,40 @@ transition: all 0.5s cubic-bezier(0.81, -0.26, 0.25, 1.26);
 .active{
   display: block;
 }
-
-table{
-  strong{
-    color: $main-blue;
-  }
-  tr{
-    /* display: flex;*/
-    /* justify-content: space-between;*/
-  }
-  td{
-    vertical-align: top;
-    /* padding-right: 30px;*/
-    width: 100%;
-    display: block;
-	padding-bottom: 30px;
-  }
-  ul{
-    li{
-      color: #333;
-      margin: 5px 0px;
-      font-size: 15px;
-      position: relative;
-      padding-left: 20px;
-      line-height: normal;
+.flex-parent{
+  table{
+    strong{
+      color: $main-blue;
     }
-    li:before {
-      content: "•";
-      color: #a88e50;
-      font-size: 20px;
-      position: absolute;
-      top: -4px;
-      left: 5px;
-      font-family: LoewReg;
+    tr{
+      /* display: flex;*/
+      /* justify-content: space-between;*/
+    }
+    td{
+      vertical-align: top;
+      /* padding-right: 30px;*/
+      width: 100%;
+      display: block;
+  	padding-bottom: 30px;
+    }
+    ul{
+      li{
+        color: #333;
+        margin: 5px 0px;
+        font-size: 15px;
+        position: relative;
+        padding-left: 20px;
+        line-height: normal;
+      }
+      li:before {
+        content: "•";
+        color: #a88e50;
+        font-size: 20px;
+        position: absolute;
+        top: -4px;
+        left: 5px;
+        font-family: LoewReg;
+      }
     }
   }
 }

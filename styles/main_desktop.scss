@@ -698,37 +698,39 @@ $main-white: rgba(255, 255, 255, 0.87);
 .active{
   display: block;
 }
-table{
-  width: 100%;
-  strong{
-    color: $main-blue;
-  }
-  tr{
-    display: flex;
-    justify-content: space-between;
-  }
-  td{
-    vertical-align: top;
-    padding-right: 30px;
-    width: 100%
-  }
-  ul{
-    li{
-      color: #333;
-      margin: 5px 0px;
-      font-size: 15px;
-      position: relative;
-      padding-left: 20px;
-      line-height: normal;
+.flex-parent{
+  table{
+    width: 100%;
+    strong{
+      color: $main-blue;
     }
-    li:before {
-      content: "•";
-      color: #a88e50;
-      font-size: 20px;
-      position: absolute;
-      top: -4px;
-      left: 5px;
-      font-family: LoewReg;
+    tr{
+      display: flex;
+      justify-content: space-between;
+    }
+    td{
+      vertical-align: top;
+      padding-right: 30px;
+      width: 100%
+    }
+    ul{
+      li{
+        color: #333;
+        margin: 5px 0px;
+        font-size: 15px;
+        position: relative;
+        padding-left: 20px;
+        line-height: normal;
+      }
+      li:before {
+        content: "•";
+        color: #a88e50;
+        font-size: 20px;
+        position: absolute;
+        top: -4px;
+        left: 5px;
+        font-family: LoewReg;
+      }
     }
   }
 }

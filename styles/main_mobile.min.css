@@ -712,21 +712,21 @@
 .active {
   display: block; }
 
-table strong {
+.flex-parent table strong {
   color: #0c3262; }
 
-table tr {
+.flex-parent table tr {
   /* display: flex;*/
   /* justify-content: space-between;*/ }
 
-table td {
+.flex-parent table td {
   vertical-align: top;
   /* padding-right: 30px;*/
   width: 100%;
   display: block;
   padding-bottom: 30px; }
 
-table ul li {
+.flex-parent table ul li {
   color: #333;
   margin: 5px 0px;
   font-size: 15px;
@@ -734,7 +734,7 @@ table ul li {
   padding-left: 20px;
   line-height: normal; }
 
-table ul li:before {
+.flex-parent table ul li:before {
   content: "•";
   color: #a88e50;
   font-size: 20px;
