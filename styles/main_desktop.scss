@@ -873,14 +873,13 @@ $main-white: rgba(255, 255, 255, 0.87);
   background-color: $main-blue;
 }
 .w25{
-  width: 25%;
+  width: 30%;
   display: inline-block;
   vertical-align: top;
-  /* margin-right: -5px; */
+  margin-right: -5px;
   min-height: 35vw;
-  /* border-right: 1px solid #ccc; */
-  // border-left: 1px solid #ccc;
-  float: left;
+  border-right: 1px solid #ccc
+
 }
 .search-input{
   border: none;
@@ -922,7 +921,7 @@ $main-white: rgba(255, 255, 255, 0.87);
   display: none;
 }
 .w75{
-  width: 75%;
+  width: 70%;
   display: inline-block;
   vertical-align: top;
   border-left: 1px solid #ccc;
