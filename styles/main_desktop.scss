@@ -236,7 +236,7 @@ $main-white: rgba(255, 255, 255, 0.87);
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 450px;
+    // width: 450px;
     height: 300px;
   }
   .form-group{
@@ -874,10 +874,11 @@ table{
   width: 25%;
   display: inline-block;
   vertical-align: top;
-  margin-right: -5px;
+  /* margin-right: -5px; */
   min-height: 35vw;
-  border-right: 1px solid #ccc;
+  /* border-right: 1px solid #ccc; */
   border-left: 1px solid #ccc;
+  float: left;
 }
 .search-input{
   border: none;
@@ -922,12 +923,12 @@ table{
   width: 75%;
   display: inline-block;
   vertical-align: top;
-  /* border-left: 1px solid #ccc; */
+  border-left: 1px solid #ccc;
   min-height: 35vw;
   border-right: 1px solid #ccc;
   position: relative;
   overflow: hidden;
-  float: right;
+  /* float: right; */
 }
 .gold-title{
   color: $main-gold;
@@ -1159,8 +1160,8 @@ table{
     color: white;
   }
 }
-.news-container:hover{
-  background: #eee;
+.clickablelink:hover{
+  // background: #eee;
 }
 .news-container:hover .news-header{
     text-decoration: underline;
@@ -1319,6 +1320,37 @@ table{
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.confirm-button{
+  width: 20px;
+  height: 20px;
+  border: 1px solid green;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+  line-height: 10px;
+  display: none;
+  color: green;
+  cursor: pointer;
+}
+
+.cancel-button{
+  width: 20px;
+  height: 20px;
+  border: 1px solid red;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+  line-height: 10px;
+  display: none;
+  color: red;
+  cursor: pointer;
 }
 
 @-webkit-keyframes build-up-parent {

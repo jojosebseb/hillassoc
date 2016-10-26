@@ -1176,6 +1176,32 @@ input.navy-btn {
   top: 50%;
   transform: translateY(-50%); }
 
+.confirm-button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid green;
+  position: absolute;
+  right: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+  line-height: 10px;
+  display: none;
+  color: green; }
+
+.cancel-button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid red;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+  line-height: 10px;
+  display: none;
+  color: red; }
+
 /* .news-detail-content::after{*/
 /*   position: absolute;*/
 /*   content: "";*/
