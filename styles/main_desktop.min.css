@@ -929,7 +929,7 @@
     right: 0;
     margin-right: 17px;
     line-height: 20px;
-    top: 35%;
+    top: 50%;
     -webkit-transform: translateY(-50%) rotateZ(90deg);
     transform: translateY(-50%) rotateZ(90deg);
     font-family: MONOSPACE;
