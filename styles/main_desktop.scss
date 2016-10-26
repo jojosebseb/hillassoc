@@ -890,7 +890,7 @@ $main-white: rgba(255, 255, 255, 0.87);
   padding-left: 10px;
   display: block;
   width: 100%;
-  margin-bottom: 15px;
+  // margin-bottom: 15px;
   outline: none;
 }
 .search-container::after{
@@ -1043,7 +1043,7 @@ $main-white: rgba(255, 255, 255, 0.87);
     padding-right: 30px;
     cursor: pointer;
     font-size: 14px;
-
+    padding-top: 15px;
     padding-left: 10px;
   }
   .vertical-tab-title::after{
@@ -1081,6 +1081,7 @@ $main-white: rgba(255, 255, 255, 0.87);
     padding-left: 10px;
     font-size: 12px;
     cursor: pointer;
+    display: none;
   }
   .inline{
     display: inline-block;
@@ -1105,6 +1106,9 @@ $main-white: rgba(255, 255, 255, 0.87);
     margin: 25px 0px;
     max-height: 1000px;
   }
+  .vertical-tab-content{
+    display: block;
+  }
 }
 .main-news-date{
   text-align: center;
@@ -1121,6 +1125,9 @@ $main-white: rgba(255, 255, 255, 0.87);
   i{
     font-size: 16px;
   }
+}
+#nonews{
+  padding: 15px 20px;
 }
 .search-container {
     padding: 19px 0px 0px;

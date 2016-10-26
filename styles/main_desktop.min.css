@@ -775,7 +775,6 @@
   padding-left: 10px;
   display: block;
   width: 100%;
-  margin-bottom: 15px;
   outline: none; }
 
 .search-container::after {
@@ -920,6 +919,7 @@
     padding-right: 30px;
     cursor: pointer;
     font-size: 14px;
+    padding-top: 15px;
     padding-left: 10px; }
   .vertical-tab-container .vertical-tab-title::after {
     content: ">";
@@ -952,7 +952,8 @@
     margin: 10px 0px;
     padding-left: 10px;
     font-size: 12px;
-    cursor: pointer; }
+    cursor: pointer;
+    display: none; }
   .vertical-tab-container .inline {
     display: inline-block;
     vertical-align: middle;
@@ -972,6 +973,8 @@
     opacity: 1;
     margin: 25px 0px;
     max-height: 1000px; }
+  .vertical-tab-container.active .vertical-tab-content {
+    display: block; }
 
 .main-news-date {
   text-align: center;
@@ -986,6 +989,9 @@
     margin: 0px 5px; }
   .main-news-date i {
     font-size: 16px; }
+
+#nonews {
+  padding: 15px 20px; }
 
 .search-container {
   padding: 19px 0px 0px;
