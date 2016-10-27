@@ -1172,16 +1172,16 @@ input.navy-btn {
 .edit-button {
   width: 20px;
   height: 20px;
-  border: 1px solid #0c3262;
   position: absolute;
   right: 40px;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  background-image: url(../img/global/icon-edit.png);
+  background-size: contain; }
 
 .confirm-button {
   width: 20px;
   height: 20px;
-  border: 1px solid green;
   position: absolute;
   right: 70px;
   top: 50%;
@@ -1189,12 +1189,13 @@ input.navy-btn {
   padding: 5px;
   line-height: 10px;
   display: none;
-  color: green; }
+  color: green;
+  background-image: url(../img/global/icon-yes.png);
+  background-size: contain; }
 
 .cancel-button {
   width: 20px;
   height: 20px;
-  border: 1px solid red;
   position: absolute;
   right: 40px;
   top: 50%;
@@ -1202,7 +1203,9 @@ input.navy-btn {
   padding: 5px;
   line-height: 10px;
   display: none;
-  color: red; }
+  color: red;
+  background-image: url(../img/global/icon-cancel.png);
+  background-size: contain; }
 
 /* .news-detail-content::after{*/
 /*   position: absolute;*/

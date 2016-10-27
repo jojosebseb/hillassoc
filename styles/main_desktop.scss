@@ -1313,10 +1313,17 @@ $main-white: rgba(255, 255, 255, 0.87);
 .form-group{
   margin: 30px;
   position: relative;
-  width: 400px;
+  width: 505px;
+}
+.form-header{
+  width: 200px;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+  font-size: 15px;
 }
 .my-account-input{
-  width: 100%;
+  width: 300px;
   height: 45px;
   padding-left: 10px;
   border: 1px solid #afafaf
@@ -1326,24 +1333,25 @@ $main-white: rgba(255, 255, 255, 0.87);
   background: $main-gold;
   padding: 10px 0;
   color: white;
-  width: 400px;
-  margin: 30px
+  width: 300px;
+  margin: 30px;
+  margin-left: 234px;
 }
 .edit-button{
   width: 20px;
   height: 20px;
-  border: 1px solid $main-blue;
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+  background-image: url(../img/global/icon-edit.png);
+  background-size: contain;
 }
 
 .confirm-button{
   width: 20px;
   height: 20px;
-  border: 1px solid green;
   position: absolute;
   right: 40px;
   top: 50%;
@@ -1353,12 +1361,13 @@ $main-white: rgba(255, 255, 255, 0.87);
   display: none;
   color: green;
   cursor: pointer;
+  background-image: url(../img/global/icon-yes.png);
+  background-size: contain;
 }
 
 .cancel-button{
   width: 20px;
   height: 20px;
-  border: 1px solid red;
   position: absolute;
   right: 10px;
   top: 50%;
@@ -1368,6 +1377,8 @@ $main-white: rgba(255, 255, 255, 0.87);
   display: none;
   color: red;
   cursor: pointer;
+  background-image: url(../img/global/icon-cancel.png);
+  background-size: contain;
 }
 
 @-webkit-keyframes build-up-parent {
