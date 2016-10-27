@@ -50,6 +50,10 @@
   padding-top: 100px;
   margin-bottom: 50px;
   position: relative;
+  /* -webkit-animation-name: build-up-parent;*/
+  /*         animation-name: build-up-parent;*/
+  /* -webkit-animation-duration: 1.3s;*/
+  /*         animation-duration: 1.3s;*/
   z-index: 10;
   background: white;
   margin-bottom: 228px;
@@ -208,9 +212,12 @@
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    height: 300px; }
+    /* width: 450px;*/
+    height: 300px;
+    text-align: center; }
   .login-overlay .form-group {
-    margin: 20px 0px; }
+    margin: 20px 0px;
+    width: 350px; }
     .login-overlay .form-group .sub-caption {
       color: #545454;
       font-size: 12px;
@@ -350,6 +357,7 @@
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .section-2 .section-2-modules {
+    /* width: 25%;*/
     min-height: 301px;
     margin: 0px 5px;
     text-align: left;
@@ -493,19 +501,26 @@
   .small-module .contact-caption {
     font-size: 15px; }
 
-.small-module:hover {
+.blue-hover-module:hover {
   background: #0c3262; }
-  .small-module:hover .blue-loewexb {
+  .blue-hover-module:hover .blue-loewexb {
     color: white; }
-  .small-module:hover .caption {
+  .blue-hover-module:hover .caption {
     color: white; }
-  .small-module:hover .gold-upperline {
+  .blue-hover-module:hover .gold-upperline {
+    /* border-top-color: white;*/
     color: white; }
 
 .what-tab-container {
   position: relative; }
   .what-tab-container .tab-handle-container ul {
-    height: 65px; }
+    height: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
   .what-tab-container .tab-handle-container li {
     display: inline-block;
     width: 24.23%;
@@ -556,6 +571,7 @@
   margin: 20px 0px; }
 
 .w50 {
+  /* width: 49%;*/
   display: inline-block;
   vertical-align: top;
   padding-right: 50px; }
@@ -590,6 +606,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between; }
   .what-we-do-section .inner-segment {
     width: 100%;
@@ -603,7 +621,11 @@
   .flex-parent table strong {
     color: #0c3262; }
   .flex-parent table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between; }
   .flex-parent table td {
     vertical-align: top;
@@ -745,7 +767,11 @@
   font-size: 13px; }
 
 .flex-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between; }
 
 .inner-segment {
@@ -775,6 +801,7 @@
   padding-left: 10px;
   display: block;
   width: 100%;
+  /* margin-bottom: 15px;*/
   outline: none; }
 
 .search-container::after {
@@ -785,6 +812,7 @@
   position: absolute;
   right: 16px;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   display: block;
   border-radius: 50%; }
@@ -797,6 +825,7 @@
   position: absolute;
   right: 8px;
   top: 55%;
+  -webkit-transform: translateY(-50%) rotateZ(40deg);
   transform: translateY(-50%) rotateZ(40deg);
   display: block;
   z-index: 5; }
@@ -810,6 +839,7 @@
   vertical-align: top;
   border-left: 1px solid #ccc;
   min-height: 35vw;
+  /* border-right: 1px solid #ccc;*/
   position: relative;
   overflow: hidden;
   /* float: right; */ }
@@ -1099,7 +1129,11 @@
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: all .4s ease;
-  transition: all .4s ease; }
+  transition: all .4s ease;
+  /* .custom-scroll{*/
+  /*   height: 60vh;*/
+  /*   overflow-y: scroll;*/
+  /* }*/ }
   .news-detail-content .news-detail-category {
     border-bottom: 1px solid #ccc;
     color: #a88e50;
@@ -1188,6 +1222,7 @@
   position: absolute;
   right: 10px;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   cursor: pointer;
   background-image: url(../img/global/icon-edit.png);
@@ -1199,6 +1234,7 @@
   position: absolute;
   right: 40px;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   padding: 5px;
   line-height: 10px;
@@ -1214,6 +1250,7 @@
   position: absolute;
   right: 10px;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   padding: 5px;
   line-height: 10px;
