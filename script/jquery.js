@@ -113,55 +113,7 @@ var newsContainer = $('.news-container');
 var newsDetail = $('.news-detail-content');
 var backBtn = $('.news-detail-category')
 var newsParent = $('.news-parent');
-var editBtn = $('.edit-button');
-var cancelBtn = $('.cancel-button');
-var confirmBtn = $('.confirm-button');
 var currentName = "";
-
-editBtn.on('click', function(){
-  currentName = $(this).parent().find('.my-account-input').val();
-  console.log(currentName);
-
-  $(this).css({
-    display: 'none'
-  })
-  $(this).parent().find('.cancel-button').css({
-    display: 'block'
-  })
-  $(this).parent().find('.confirm-button').css({
-    display: 'block'
-  })
-  $(this).parent().find('.my-account-input').prop('readonly', false);
-  $(this).parent().find('.my-account-input').focus();
-})
-
-cancelBtn.on('click', function(){
-  $(this).parent().find('.my-account-input').val(currentName);
-  $(this).css({
-    display: 'none'
-  })
-  $(this).parent().find('.confirm-button').css({
-    display: 'none'
-  })
-  $(this).parent().find('.edit-button').css({
-    display: 'block'
-  })
-  $(this).parent().find('.my-account-input').prop('readonly', true);
-})
-
-confirmBtn.on('click', function(){
-  $(this).css({
-    display: 'none'
-  })
-  $(this).parent().find('.cancel-button').css({
-    display: 'none'
-  })
-  $(this).parent().find('.edit-button').css({
-    display: 'block'
-  })
-  $(this).parent().find('.my-account-input').prop('readonly', true);
-})
-
 
 //newsContainer.on('click', function(){
 $("#newscontentdiv").on('click', 'a.clickablelink', function(e){
