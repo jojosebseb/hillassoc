@@ -890,7 +890,6 @@ span.spantgl {
 
 .filter-handle {
   border: 1px solid black;
-  margin: 10px 0px;
   padding: 5px 10px;
   position: relative;
   cursor: pointer;
@@ -955,7 +954,7 @@ span.spantgl {
   font-size: 14px; }
 
 .filter-group {
-  margin-bottom: 30px; }
+  padding: 0px 30px; }
 
 .filter-inline-group {
   text-align: left;
@@ -979,6 +978,8 @@ span.spantgl {
 .vertical-tab-container {
   z-index: 1;
   position: relative; }
+  .vertical-tab-container .filter-handle {
+    margin: 0; }
   .vertical-tab-container .vertical-tab-title {
     color: #a88e50;
     font-family: loewMed;
@@ -1032,8 +1033,19 @@ span.spantgl {
   .vertical-tab-container .inline:hover {
     text-decoration: underline; }
 
+.filter-handle-archive {
+  border: 1px solid black;
+  padding: 5px 10px;
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  display: block;
+  width: 100%; }
+
 .vertical-tab-container.active {
   z-index: 5; }
+  .vertical-tab-container.active .filter-handle-archive {
+    margin: 10px 0; }
   .vertical-tab-container.active .vertical-tab-title::after {
     -webkit-transform: translateY(-50%) rotateZ(-90deg);
     transform: translateY(-50%) rotateZ(-90deg); }
