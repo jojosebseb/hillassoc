@@ -51,6 +51,9 @@
   width: 1050px;
   margin: auto; }
 
+span.agas:hover {
+  border-bottom: 1px solid white; }
+
 .parent-container {
   min-height: 90vh;
   padding-top: 100px;
