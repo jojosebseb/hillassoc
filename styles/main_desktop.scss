@@ -672,13 +672,19 @@ span.agas:hover {
   }
 }
 ul.pagination{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   padding-bottom: 20px;
   color: $main-blue;
+  li{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $main-blue;
+    text-align: center;
+    margin-right: -4px;
+  }
+  li.active{
+    display: inline-block;
+  }
 }
 span.spantgl {
     text-align: right;
