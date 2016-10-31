@@ -586,6 +586,21 @@ span.agas:hover {
     font-size: 15px;
   }
 }
+.small-module:hover{
+  background: $main-blue;
+  .blue-paragraph{
+    color: white;
+  }
+  .gold-highlight{
+    color: white;
+  }
+  .caption{
+    color: white;
+  }
+  .contact-caption{
+    color: white;
+  }
+}
 .blue-hover-module:hover{
   background: $main-blue;
   .blue-loewexb{

@@ -510,6 +510,17 @@ span.agas:hover {
   .small-module .contact-caption {
     font-size: 15px; }
 
+.small-module:hover {
+  background: #0c3262; }
+  .small-module:hover .blue-paragraph {
+    color: white; }
+  .small-module:hover .gold-highlight {
+    color: white; }
+  .small-module:hover .caption {
+    color: white; }
+  .small-module:hover .contact-caption {
+    color: white; }
+
 .blue-hover-module:hover {
   background: #0c3262; }
   .blue-hover-module:hover .blue-loewexb {
