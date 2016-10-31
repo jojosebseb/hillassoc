@@ -892,7 +892,15 @@ input.navy-btn {
   font-size: 14px; }
 
 .filter-group {
-  margin-bottom: 30px; }
+  margin-bottom: 0px;
+  padding: 20px; }
+
+select.filter-handle-archive {
+  display: block;
+  width: 100%;
+  border: 1px solid black;
+  margin: 10px 0px;
+  padding: 5px; }
 
 .vertical-tab-container {
   z-index: 1;
