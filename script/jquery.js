@@ -196,11 +196,11 @@ newsDetail.on('swiperight', function(){
     'transform': 'scale(1)',
   })
 })
-filterOptions.jScrollPane(
-  {
-    animateScroll : true,
-  }
-);
+// filterOptions.jScrollPane(
+//   {
+//     animateScroll : true,
+//   }
+// );
 // customScroll.jScrollPane();
 filterHandle.on('click', function(){
   // filterHandle.removeClass('active');
