@@ -44,6 +44,13 @@ $main-blue: #0c3262;
 $main-gold: #a88e50;
 $main-white: rgba(255, 255, 255, 0.87);
 
+#resultaccount, #resultchanged{
+  border: 1px solid $main-blue;
+  // padding: 10px tex;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+}
 .container, .section-2-container{
   width: 1050px;
   margin: auto;

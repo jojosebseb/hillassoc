@@ -41,6 +41,12 @@
   font-family: Myriad;
   src: url(../fonts/MyriadPro-Regular.otf); }
 
+#resultaccount, #resultchanged {
+  border: 1px solid #0c3262;
+  text-align: center;
+  padding: 10px;
+  margin: auto; }
+
 .container, .section-2-container {
   width: 1050px;
   margin: auto; }
