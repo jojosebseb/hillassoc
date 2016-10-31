@@ -46,7 +46,7 @@ $main-white: rgba(255, 255, 255, 0.87);
 
 #resultaccount, #resultchanged{
   border: 1px solid $main-blue;
-  // padding: 10px tex;
+  /* padding: 10px tex;*/
   text-align: center;
   padding: 10px;
   margin: auto;
@@ -670,6 +670,20 @@ span.agas:hover {
   .tab-content.active{
     display: block;
   }
+}
+ul.pagination{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 20px;
+  color: $main-blue;
+}
+span.spantgl {
+    text-align: right;
+    display: inline-block;
+    float: right;
 }
 .normal-title{
   color: $main-blue;
