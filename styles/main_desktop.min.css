@@ -599,7 +599,10 @@ ul.pagination {
     display: inline-block;
     font-weight: bold;
     background: #0c3262;
-    color: white; }
+  color: white; }
+  ul.pagination li a {
+	display: block;
+  }
 
 .news-title-container .news-title-width {
   font-family: LoewMed;
