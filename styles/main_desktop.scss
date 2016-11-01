@@ -208,9 +208,13 @@ span.agas:hover {
       -webkit-transition: all .1s ease-in;
       transition: all .1s ease-in;
       position: relative;
-      top: 9px;
+      top: 5px;
     }
     li:hover{
+      color: $main-blue;
+      border-bottom: 5px solid #121257;
+    }
+    li.activemenu{
       color: $main-blue;
       border-bottom: 5px solid #121257;
     }
@@ -227,6 +231,49 @@ span.agas:hover {
 /* login*/
 .risLogin{
   cursor: pointer;
+  font-size: 13px;
+  .user-icon-container{
+    height: 27px;
+    width: 25px;
+    position: relative;
+    overflow: hidden;
+    top: 8px;
+    border-bottom: 2px solid $main-gold;
+    margin: auto;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    display: inline-block;
+    transform: scale(0.5);
+    margin-right: -3px;
+    .user-head{
+      width: 15px;
+      border: 2px solid $main-gold;
+      height: 14px;
+      border-radius: 50%;
+      margin: 0 auto -1px;
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+    }
+    .user-body{
+      width: 25px;
+      height: 24px;
+      border: 2px solid $main-gold;
+      border-radius: 45%;
+      margin: auto;
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+    }
+  }
+
+}
+.risLogin:hover{
+  text-decoration: underline;
+  .user-head{
+    background: $main-gold
+  }
+  .user-body{
+    background: $main-gold
+  }
 }
 .login-overlay{
   position: fixed;
@@ -545,6 +592,7 @@ span.agas:hover {
   width: 25%;
   display: inline-block;
   vertical-align: top;
+  margin-left: 6px;
 }
 .title{
   color: $main-blue;

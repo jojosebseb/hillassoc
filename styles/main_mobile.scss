@@ -265,6 +265,7 @@ $main-white: rgba(255, 255, 255, 0.87);
   margin: auto;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  transform: scale(0.9);
   .user-head{
     width: 15px;
     border: 2px solid grey;
@@ -883,7 +884,11 @@ input.navy-btn{
   margin: 20px 0px;
 }
 /*contact*/
-
+.risLogin{
+  .user-icon-container{
+    display: none;
+  }
+}
 /*ris*/
 .blue-block{
   height: 50px;

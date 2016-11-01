@@ -234,7 +234,8 @@
   border-bottom: 2px solid grey;
   margin: auto;
   -webkit-transition: all .3s ease;
-  transition: all .3s ease; }
+  transition: all .3s ease;
+  transform: scale(0.9); }
   .user-icon-container .user-head {
     width: 15px;
     border: 2px solid grey;
@@ -769,6 +770,9 @@ input.navy-btn {
   margin: 20px 0px; }
 
 /*contact*/
+.risLogin .user-icon-container {
+  display: none; }
+
 /*ris*/
 .blue-block {
   height: 50px;
