@@ -678,7 +678,6 @@ span.agas:hover {
       display: inline-block;
       width: 24.23%;
       /* float: left; */
-      margin: 0px 0.5% 0px 0px;
       vertical-align: top;
       border-bottom: 2px solid #aaaaaa;
       cursor: pointer;
@@ -687,6 +686,7 @@ span.agas:hover {
       -webkit-transition: all .3s ease;
       transition: all .3s ease;
       vertical-align: bottom;
+      font-size: 14px;
     }
     li.active{
       border-bottom: 2px solid $main-gold;
