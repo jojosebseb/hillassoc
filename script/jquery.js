@@ -105,7 +105,7 @@ archiveClose.on('click', function(){
 
 //ris
 var filterOptions = $('.scroll-controller');
-var filterHandle = $('.filter-handle');
+// var filterHandle = $('.filter-handle');
 var verticalTabTitle = $('.vertical-tab-title');
 var verticalTabHandle = $('.vertical-tab-container');
 var customScroll = $('.custom-scroll');
@@ -154,16 +154,16 @@ newsDetail.on('swiperight', function(){
 //   }
 // );
 // customScroll.jScrollPane();
-filterHandle.on('click', function(){
-  // filterHandle.removeClass('active');
-  // $(this).addClass('active');
-  if (filterHandle.hasClass('active')) {
-    filterHandle.removeClass('active');
-  }
-  else {
-    $(this).addClass('active');
-  }
-})
+// filterHandle.on('click', function(){
+//   // filterHandle.removeClass('active');
+//   // $(this).addClass('active');
+//   if (filterHandle.hasClass('active')) {
+//     filterHandle.removeClass('active');
+//   }
+//   else {
+//     $(this).addClass('active');
+//   }
+// })
 verticalTabTitle.on('click', function(){
   if($(this).parent().hasClass("active")){
     $(this).parent().removeClass("active");

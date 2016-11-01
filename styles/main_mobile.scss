@@ -1105,6 +1105,69 @@ select.filter-handle-archive {
     text-decoration: underline;
   }
 }
+.archive-download{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #55bcaa;
+  border-radius: 50%;
+  position: absolute;
+  right: 20p;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.archive-download::after{
+  content: "";
+  width: 3px;
+  height: 11px;
+  background-color: #55bcaa;
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 3px;
+  transform: translateX(-50%);
+}
+.archive-download::before{
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-bottom: 3px solid #55bcaa;
+  border-right: 3px solid #55bcaa;
+  // background-color: #55bcaa;
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 7px;
+  transform: translateX(-50%) rotateZ(45deg);
+}
+.archive-a:visited .archive-download{
+  border: 2px solid grey;
+}
+.archive-a:visited .archive-download::before{
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-bottom: 3px solid grey;
+  border-right: 3px solid grey;
+  // background-color: #55bcaa;
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 7px;
+  transform: translateX(-50%) rotateZ(45deg);
+}
+.archive-a:visited .archive-download::after{
+  content: "";
+  width: 3px;
+  height: 11px;
+  background-color: grey;
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 3px;
+  transform: translateX(-50%);
+}
 .archive-a:visited .archive-download{
   border: 2px solid grey;
 }
@@ -1235,6 +1298,28 @@ select.filter-handle-archive {
   position: relative;
   margin: 0;
   padding: 10px 0px 30px;
+  .vertical-tab-content{
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    .pdf-icon{
+      height: 50px;
+      margin-left: 20px;
+      vertical-align: middle;
+    }
+    .content-title{
+      font-family: LoewMed;
+    }
+    .inline{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      margin-left: 20px;
+    }
+    .content-time{
+      float: right;
+    }
+  }
 }
 .news-detail-content{
   width: 100vw;

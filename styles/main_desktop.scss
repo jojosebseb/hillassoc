@@ -126,7 +126,7 @@ span.agas:hover {
 .username-container{
   color: $main-gold;
   position: relative;
-  top: 25px;
+  top: 45px;
   right: 10px;
   span{
     font-family: LoewMed;
@@ -975,6 +975,9 @@ ul.pagination{
   /* margin-bottom: 15px;*/
   outline: none;
 }
+// .archive-inline{
+//   float: left;
+// }
 .search-container::after{
   content: "";
   border: 2px solid #0c3262;
@@ -1169,6 +1172,7 @@ ul.pagination{
     font-size: 12px;
     cursor: pointer;
     display: none;
+    position: relative;
   }
   .inline{
     display: inline-block;
@@ -1321,11 +1325,99 @@ ul.pagination{
   background: rgba(0,0,0,0.75);
   z-index: 2000;
 }
+.archive-download{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #55bcaa;
+  border-radius: 50%;
+  position: absolute;
+  right: 20p;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.archive-download::after{
+  content: "";
+  width: 3px;
+  height: 11px;
+  background-color: #55bcaa;
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 3px;
+  transform: translateX(-50%);
+}
+.archive-download::before{
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-bottom: 3px solid #55bcaa;
+  border-right: 3px solid #55bcaa;
+  // background-color: #55bcaa;
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 7px;
+  transform: translateX(-50%) rotateZ(45deg);
+}
+.archive-a:visited .archive-download{
+  border: 2px solid grey;
+}
+.archive-a:visited .archive-download::before{
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-bottom: 3px solid grey;
+  border-right: 3px solid grey;
+  // background-color: #55bcaa;
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 7px;
+  transform: translateX(-50%) rotateZ(45deg);
+}
+.archive-a:visited .archive-download::after{
+  content: "";
+  width: 3px;
+  height: 11px;
+  background-color: grey;
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 3px;
+  transform: translateX(-50%);
+}
 .news-parent{
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
   position: relative;
   margin: 0;
+  .vertical-tab-content{
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    .pdf-icon{
+      height: 50px;
+      margin-left: 20px;
+      vertical-align: middle;
+    }
+    .content-title{
+      font-family: LoewMed;
+    }
+    .inline{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      margin-left: 20px;
+    }
+    .content-time{
+      float: right;
+    }
+  }
+  .vertical-tab-content:hover{
+    background: #eee;
+  }
 }
 .news-content-group{
   padding: 20px 0px 50px;
