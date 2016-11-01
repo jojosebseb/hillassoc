@@ -601,10 +601,17 @@ ul.pagination {
     background: #0c3262;
     color: white; }
 
-span.spantgl {
-  text-align: right;
+.news-title-container .news-title-width {
+  font-family: LoewMed;
+  width: 500px;
   display: inline-block;
-  float: right; }
+  letter-spacing: -1px; }
+
+.news-title-container .news-title-width {
+  font-family: LoewMed;
+  width: 500px;
+  display: inline-block;
+  letter-spacing: -1px; }
 
 .normal-title {
   color: #0c3262;
@@ -1217,7 +1224,11 @@ span.spantgl {
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
     padding: 0 20px;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    /* overflow-y: scroll; */
+    overflow: auto;
+    /* height: 45%; */
+    max-height: 865px; }
   .news-detail-content .comment-container {
     padding: 0 20px; }
   .news-detail-content .back-btn {

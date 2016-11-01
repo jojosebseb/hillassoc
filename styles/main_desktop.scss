@@ -695,11 +695,21 @@ ul.pagination{
     color: white;
   }
 }
-span.spantgl {
-    text-align: right;
+.news-title-container{
+  .news-title-width {
+    font-family: LoewMed;
+    width: 500px;
     display: inline-block;
-    float: right;
+    letter-spacing: -1px;
+  }
+  .news-title-width {
+    font-family: LoewMed;
+    width: 500px;
+    display: inline-block;
+    letter-spacing: -1px;
+  }
 }
+
 .normal-title{
   color: $main-blue;
   font-family: 24px;
@@ -1364,6 +1374,10 @@ span.spantgl {
     margin-bottom: 20px;
     padding: 0 20px;
     padding-bottom: 20px;
+    /* overflow-y: scroll; */
+    overflow: auto;
+    /* height: 45%; */
+    max-height: 865px;
   }
   .comment-container{
     padding: 0 20px;
