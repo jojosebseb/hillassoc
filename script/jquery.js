@@ -61,14 +61,10 @@ tabHandle.on('click', function(){
 var loginBtn = $('.risLogin');
 var loginClose = $('.login-close');
 loginBtn.on('click', function(){
-  $('.login-overlay').css({
-    display: 'block'
-  })
+  $('.login-overlay').fadeIn();
 })
 loginClose.on('click', function(){
-  $('.login-overlay').css({
-    display: 'none'
-  })
+  $('.login-overlay').fadeOut();
 })
 //login
 
