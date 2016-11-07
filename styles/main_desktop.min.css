@@ -95,7 +95,13 @@ span.agas:hover {
   border: 1px solid white;
   padding: 5px 10px;
   font-family: LoewReg;
-  display: inline-block; }
+  display: inline-block;
+  transition: all .3s ease; }
+
+.outline-button::hover {
+  background: #0c3262;
+  color: white;
+  border: 1px solid #0c3262; }
 
 .page-topic {
   font-size: 15px;
@@ -367,6 +373,10 @@ span.agas:hover {
     font-size: 15px;
     margin-top: 30px;
     padding: 0px 15px; }
+  .index-banner .outline-button:hover {
+    background: #0c3262;
+    color: white;
+    border: 1px solid #0c3262; }
 
 .section-1 {
   margin: 50px 0px;
@@ -497,6 +507,15 @@ span.agas:hover {
     font-size: 15px;
     margin-top: 30px;
     padding: 0px 15px; }
+  .general-banner .outline-button:hover {
+    background: #0c3262;
+    color: white;
+    border: 1px solid #0c3262; }
+
+.gold-hover:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all .3s ease; }
 
 /*index*/
 /*whatwedo*/

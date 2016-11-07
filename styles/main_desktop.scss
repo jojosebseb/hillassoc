@@ -101,6 +101,13 @@ span.agas:hover {
   padding: 5px 10px;
   font-family: LoewReg;
   display: inline-block;
+  transition: all .3s ease;
+}
+
+.outline-button::hover{
+  background: $main-blue;
+  color: white;
+  border: 1px solid $main-blue;
 }
 .page-topic{
   font-size: 15px;
@@ -422,6 +429,11 @@ span.agas:hover {
     margin-top: 30px;
     padding: 0px 15px;
   }
+  .outline-button:hover{
+    background: $main-blue;
+    color: white;
+    border: 1px solid $main-blue;
+  }
 }
 .section-1{
   margin: 50px 0px;
@@ -574,6 +586,16 @@ span.agas:hover {
     margin-top: 30px;
     padding: 0px 15px;
   }
+  .outline-button:hover{
+    background: $main-blue;
+    color: white;
+    border: 1px solid $main-blue;
+  }
+}
+.gold-hover:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all .3s ease;
 }
 /*index*/
 
