@@ -1703,3 +1703,15 @@ ul.pagination{
   }
 }
 /*anim-controller*/
+
+.show{
+  display: block;
+  z-index: 5;
+  background: $main-blue;
+  .navbar-logo{
+    width: 200px;
+  }
+  .login-container{
+    height: 350px;
+  }
+}
