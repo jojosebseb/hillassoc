@@ -1308,3 +1308,11 @@ select.filter-handle-archive {
 /*   z-index: 4;*/
 /* }*/
 /*ris*/
+.show {
+  display: block;
+  z-index: 5;
+  background: #0c3262; }
+  .show .navbar-logo {
+    width: 200px; }
+  .show .login-container {
+    height: 350px; }
