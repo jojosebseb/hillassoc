@@ -1325,7 +1325,9 @@ ul.pagination {
     background: #eee; }
 
 .news-content-group {
-  padding: 20px 0px 50px; }
+  padding: 20px 0px 50px;
+  max-height: 600px;
+  overflow: auto; }
 
 .news-detail-content {
   width: 100%;
