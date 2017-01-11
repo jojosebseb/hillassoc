@@ -955,7 +955,7 @@ ul.pagination {
   display: inline-block;
   vertical-align: top;
   border-left: 1px solid #ccc;
-  min-height: 35vw;
+  min-height: 45vw;
   /* border-right: 1px solid #ccc;*/
   position: relative;
   overflow: hidden;
@@ -1167,7 +1167,7 @@ ul.pagination {
     font-family: LoewReg; }
   .news-container .news-header {
     color: #0c3262;
-    font-size: 16px;
+    font-size: 15px;
     font-family: LoewMed;
     cursor: pointer;
     display: block;
@@ -1324,9 +1324,9 @@ ul.pagination {
   .news-parent .vertical-tab-content:hover {
     background: #eee; }
 
-.news-content-group {
+.news-content-group, .news-content-group-without-scroll {
   padding: 20px 0px 50px;
-  max-height: 600px;
+  max-height: 800px;
   overflow: auto; }
 
 .news-detail-content {
@@ -1357,7 +1357,6 @@ ul.pagination {
   .news-detail-content .news-detail-date {
     color: #333;
     font-size: 13px;
-    margin-top: 20px;
     padding: 0 20px; }
   .news-detail-content .news-detail-title {
     color: #0c3262;
@@ -1365,15 +1364,14 @@ ul.pagination {
     font-weight: Bold;
     padding: 0 20px; }
   .news-detail-content .news-detail-paragraph {
-    font-size: 16px;
+    font-size: 15px;
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
     padding: 0 20px;
     padding-bottom: 20px;
+    line-height: 33px;
     /* overflow-y: scroll; */
-    overflow: auto;
-    /* height: 45%; */
-    max-height: 865px; }
+    /* height: 45%; */ }
   .news-detail-content .comment-container {
     padding: 0 20px; }
   .news-detail-content .back-btn {
@@ -1525,3 +1523,26 @@ ul.pagination {
     width: 200px; }
   .show .login-container {
     height: 350px; }
+
+#detaildetail p {
+  margin: 10px 0; }
+
+#detaildetail ol {
+  margin: 10px 0; }
+  #detaildetail ol li {
+    list-style: decimal;
+    margin-left: 20px;
+    padding-left: 10px;
+    line-height: 20px;
+    /* margin: 10px 0; */
+    margin-top: 15px; }
+
+#detaildetail ul {
+  margin: 10px 0; }
+  #detaildetail ul li {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+    line-height: 20px;
+    /* margin: 10px 0; */
+    margin-top: 15px; }
